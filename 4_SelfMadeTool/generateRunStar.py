@@ -8,14 +8,19 @@ base = 'p="../arx"\n'
 base += 'nohup /home/tool/STAR/source/STAR --genomeDir ../data/starg  --runThreadN 8   --readFilesIn '
 
 mateFiles = [name for name in filenames if 'fastq' in name and '_' in name]
+singleFile = [name for name in filenames if 'fastq' in name and '_' not in name]
+
 if len(mateFiles) is 2:
-    for name in filenames:
+    for name in mateFiles:
         base += '$p/'+name+" "
-elif len(mateFiles) is 0:
-    base +=
+    base += '> loginfo &\n'
+elif len(singleFile) is 1:
+    base += '$p/' + singleFile[0]+" "
+    base += '> loginfo &\n'
+else:
+    print "##problem with script"
+    print filenames
 
-
-
-
-base += '> loginfo &\n'
+print "mateFiles: ", mateFiles
+print "singleFile", singleFile
 with open("run_star.sh",'w') as f:f.write(base)
