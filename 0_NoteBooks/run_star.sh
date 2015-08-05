@@ -1,2 +1,1 @@
-p="../arx"
-nohup /home/tool/STAR/source/STAR --genomeDir ../data/starg  --runThreadN 8   --readFilesIn $p/ERR135878_2.fastq $p/ERR135878_1.fastq > loginfo &
+nohup /home/tool/STAR/source/STAR --genomeDir ../data/starg --runThreadN 8 --readFilesIn ../arx/ERR135872._1.fastq,../arx/ERR135873._1.fastq,../arx/ERR135874._1.fastq,../arx/ERR135875._1.fastq,../arx/ERR135876._1.fastq,../arx/ERR135877._1.fastq,../arx/ERR135878._1.fastq,../arx/ERR135879._1.fastq,../arx/ERR135880._1.fastq,../arx/ERR135881._1.fastq ../arx/ERR135872._2.fastq,../arx/ERR135873._2.fastq,../arx/ERR135874._2.fastq,../arx/ERR135875._2.fastq,../arx/ERR135876._2.fastq,../arx/ERR135877._2.fastq,../arx/ERR135878._2.fastq,../arx/ERR135879._2.fastq,../arx/ERR135880._2.fastq,../arx/ERR135881._2.fastq > loginfo &
