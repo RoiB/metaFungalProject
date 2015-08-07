@@ -2,7 +2,7 @@ import pandas as pd
 import sys
 import datetime
 
-def fill(num): 
+def fill(num):
         if len(num) == 1:
             return "0"+num
         else:
@@ -44,10 +44,10 @@ def main():
 
     RNASeqFileInfo.to_csv("/home/richard/research/1_DataSmall/rnaSeqFileList.csv", index = None)
     with open("{}getRNASeqData_{}.sh".format(logPath, shortName), 'w') as f: f.write(script_rna)
-    print "Please wait until the download is done to run alignment with command: bash runAlignment.sh {}.".format(shortName)
+    print "Please wait until the download is done to run alignment with command: bash runAlignment.sh {}".format(shortName)
     # RNASeqFileInfo
 
-    
+
 
 if __name__ == '__main__':
     main()
