@@ -1,7 +1,10 @@
 '''
 prep work
-1. Download *.sra file to '/storage3/w/richard/meta2015/dataForRNASeq/'
-2. update
+1. Download *.sra file to /storage3/w/richard/meta2015/dataForRNASeq/ (using tool: )
+2. update ~richard/research/1_DataSmall/rnaSeqFileList.csv, fill out rna seq info: shortName,rnaSeqFileName,URL
+3. run python ~richard/research/4_SelfMadeTool/makeRunStar.py <shortName>
+4. run nohup bash /storage3/w/richard/meta2015/logFile/rnaSeq_<shortName>.sh &
+5. wait for the result to show up at /storage3/w/richard/meta2015/placeForRNASeq/<shortName>
 '''
 import pandas as pd
 import sys
@@ -71,7 +74,7 @@ def main():
     script += 'bash run_star_{}.sh &\n'.format(shortName)
 
     with open("{}rnaSeq_{}.sh".format(logPath,shortName), 'w') as f: f.write(script)
-    print "please run rnaSeq_{}.sh in the star folder".format(shortName)
+    print "please run bash /storage3/w/richard/meta2015/logFile/rnaSeq_{}.sh".format(shortName)
     
 if __name__ == '__main__':
     main()
