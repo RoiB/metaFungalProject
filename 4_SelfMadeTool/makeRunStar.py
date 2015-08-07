@@ -74,7 +74,7 @@ def main():
     script += 'bash run_star_{}.sh &\n'.format(shortName)
 
     with open("{}rnaSeq_{}.sh".format(logPath,shortName), 'w') as f: f.write(script)
-    print "please run bash /storage3/w/richard/meta2015/logFile/rnaSeq_{}.sh".format(shortName)
+    print "Please be prepared to wait for looooong time until the alignment is done :)"
     
 if __name__ == '__main__':
     main()
