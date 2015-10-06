@@ -1,4 +1,5 @@
 from Bio import SeqIO
+import sys
 
 def filter_fasta(fastaFile, annotationFile, fastaFileFiltered, annotationFileUpdated):
     '''Wrapper function to filter multifasta file according to annotation'''
@@ -11,6 +12,7 @@ def filter_fasta(fastaFile, annotationFile, fastaFileFiltered, annotationFileUpd
     items_updated = calculate_location_shift(annotation_items)
     update_annotation(items_updated,annotationFile,annotationFileUpdated)
     print "The filtered fasta file is stored at location:", fastaFileFiltered
+    print "The filtered annotation file is stored at location:", annotationFileUpdated
 
 
 
