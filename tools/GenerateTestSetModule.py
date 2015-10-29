@@ -6,8 +6,8 @@ def makeTestSet(shortName, intergenic_length, sourceGtf, sourceFasta, targetGtf,
     '''
     execute
     '''
-    gene_locations = get_gene_locationV1(sourceGtf)
-#     gene_locations = get_gene_locationV1Choice2(sourceGtf)
+    #gene_locations = get_gene_locationV1(sourceGtf)
+    gene_locations = get_gene_locationV1Choice2(sourceGtf)
     cutFasta(shortName,intergenic_length, gene_locations, sourceFasta, targetFasta)
     updateGtf(shortName,intergenic_length, gene_locations, sourceGtf, targetGtf)
 
