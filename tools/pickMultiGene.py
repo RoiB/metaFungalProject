@@ -1,5 +1,6 @@
+## version 1 add modified key ##
 import sys
-
+import re
 def filter_out_single_gene(inputFile,outputFile):
     '''
     Filter out single gene and keep multi-fasta gene from gtf annotation
@@ -9,13 +10,14 @@ def filter_out_single_gene(inputFile,outputFile):
     with open(inputFile) as f:
         for line in f:
             elems = line.split()
-            key = elems[9]
+            key = re.sub('\;','',elems[9])
             gene_counter[key] = [0,0] #[exon number, CDS number]
             annotation_container[key] = []
+            
     with open(inputFile) as f:
         for line in f:
             elems = line.split()
-            key = elems[9]
+            key = re.sub('\;','',elems[9])
             annotation_container[key].append(line)
             if 'exon' in elems[2]:
                 gene_counter[key][0] += 1

@@ -1,0 +1,887 @@
+Fri Nov  6 13:47:46 EST 2015
+
+**Summary Stats**
+Annotation:	/home/richard/research/tests/Oct30NewTestSet/testSet100/Conli1_100genes.gtf
+Predictions:             	/home/richard/research/tests/Nov6TestbySequenceGC/test100outputBySeqGCMid/Conli1/Conli1_fullPrediction.gtf
+
+Gene Sensitivity         	0.00%     
+Gene Specificity         	0.00%     
+Transcript Sensitivity   	0.00%     
+Transcript Specificity   	0.00%     
+Exon Sensitivity         	69.69%    
+Exon Specificity         	66.89%    
+Nucleotide Sensitivity   	99.82%    
+Nucleotide Specificity   	97.20%    
+
+**General Stats**
+Predictions:
+		                         	/home/richard/research/tests/Oct30NewTestSet/testSet100/Conli1_100genes.gtf	/home/richard/research/tests/Nov6TestbySequenceGC/test100outputBySeqGCMid/Conli1/Conli1_fullPrediction.gtf
+Gene
+	All                      
+		Count                    	100.00    	109.00    
+		Total Transcripts        	100.00    	109.00    
+		Transcripts Per          	1.00      	1.00      
+Transcript
+	All                      
+		Count                    	100.00    	109.00    
+		Average Length           	1702.29   	1535.12   
+		Median Length            	1454.00   	1306.00   
+		Total Length             	170229.00 	167328.00 
+		Average Coding Length    	1540.20   	1411.37   
+		Median Coding Length     	1317.00   	1173.00   
+		Total Coding Length      	154020.00 	153839.00 
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+		Ave Exons Per            	2.87      	2.74      
+		Med Exons Per            	3.00      	2.00      
+		Total Exons              	287.00    	299.00    
+	Complete                 
+		Count                    	100.00    	85.00     
+		Average Length           	1702.29   	1576.73   
+		Median Length            	1454.00   	1325.00   
+		Total Length             	170229.00 	134022.00 
+		Average Coding Length    	1540.20   	1458.49   
+		Median Coding Length     	1317.00   	1203.00   
+		Total Coding Length      	154020.00 	123972.00 
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+		Ave Exons Per            	2.87      	2.66      
+		Med Exons Per            	3.00      	2.00      
+		Total Exons              	287.00    	226.00    
+	Incomplete               
+		Count                    	0.00      	24.00     
+		Average Length           	0.00      	1387.75   
+		Median Length            	0.00      	1173.00   
+		Total Length             	0.00      	33306.00  
+		Average Coding Length    	0.00      	1244.46   
+		Median Coding Length     	0.00      	1000.00   
+		Total Coding Length      	0.00      	29867.00  
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+		Ave Exons Per            	0.00      	3.04      
+		Med Exons Per            	0.00      	2.00      
+		Total Exons              	0.00      	73.00     
+	Single Exon              
+		Count                    	0.00      	8.00      
+		Average Length           	0.00      	1014.00   
+		Median Length            	0.00      	741.00    
+		Total Length             	0.00      	8112.00   
+		Average Coding Length    	0.00      	1011.00   
+		Median Coding Length     	0.00      	738.00    
+		Total Coding Length      	0.00      	8088.00   
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+		Ave Exons Per            	0.00      	1.00      
+		Med Exons Per            	0.00      	1.00      
+		Total Exons              	0.00      	8.00      
+Exon
+	All                      
+		Count                    	287.00    	299.00    
+		Average Length           	535.62    	514.51    
+		Median Length            	287.00    	296.00    
+		Total Length             	153723.00 	153839.00 
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	Initial                  
+		Count                    	100.00    	83.00     
+		Average Length           	482.52    	403.01    
+		Median Length            	211.00    	222.00    
+		Total Length             	48252.00  	33450.00  
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	Internal                 
+		Count                    	87.00     	113.00    
+		Average Length           	502.10    	471.55    
+		Median Length            	238.00    	238.00    
+		Total Length             	43683.00  	53285.00  
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	Terminal                 
+		Count                    	100.00    	95.00     
+		Average Length           	617.88    	621.22    
+		Median Length            	467.00    	435.00    
+		Total Length             	61788.00  	59016.00  
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	Single                   
+		Count                    	0.00      	8.00      
+		Average Length           	0.00      	1011.00   
+		Median Length            	0.00      	738.00    
+		Total Length             	0.00      	8088.00   
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	UTR3                     
+		Count                    	0.00      	0.00      
+		Average Length           	0.00      	0.00      
+		Median Length            	0.00      	0.00      
+		Total Length             	0.00      	0.00      
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	UTR5                     
+		Count                    	0.00      	0.00      
+		Average Length           	0.00      	0.00      
+		Median Length            	0.00      	0.00      
+		Total Length             	0.00      	0.00      
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	Intron                   
+		Count                    	187.00    	190.00    
+		Average Length           	86.68     	69.37     
+		Median Length            	64.00     	64.00     
+		Total Length             	16209.00  	13180.00  
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	InframeOptional          
+		Count                    	0.00      	0.00      
+		Average Length           	0.00      	0.00      
+		Median Length            	0.00      	0.00      
+		Total Length             	0.00      	0.00      
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+	FrameshiftOptional       
+		Count                    	0.00      	0.00      
+		Average Length           	0.00      	0.00      
+		Median Length            	0.00      	0.00      
+		Total Length             	0.00      	0.00      
+		Average Score            	0.00      	0.00      
+		Total Score              	0.00      	0.00      
+Nuc
+	All                      
+		Count                    	6619.00   	6797.00   
+	Initial                  
+		Count                    	6619.00   	6607.00   
+	Internal                 
+		Count                    	4485.00   	4262.00   
+	Terminal                 
+		Count                    	4083.00   	3953.00   
+	Single                   
+		Count                    	0.00      	3774.00   
+	UTR3                     
+		Count                    	0.00      	0.00      
+	UTR5                     
+		Count                    	0.00      	0.00      
+	Intron                   
+		Count                    	3790.00   	3288.00   
+	InframeOptional          
+		Count                    	0.00      	0.00      
+	FrameshiftOptional       
+		Count                    	0.00      	0.00      
+Signal
+	Splice Acceptor          
+		Count                    	187.00    	208.00    
+	Splice Donor             
+		Count                    	187.00    	196.00    
+	Start Codon              
+		Count                    	100.00    	91.00     
+	Stop Codon               
+		Count                    	100.00    	103.00    
+
+
+**Detailed Stats**
+Annotation:	/home/richard/research/tests/Oct30NewTestSet/testSet100/Conli1_100genes.gtf
+Predictions:	                         /home/richard/research/tests/Nov6TestbySequenceGC/test100outputBySeqGCMid/Conli1/Conli1_fullPrediction.gtf
+Gene
+	All
+		Count                    	109.00    
+		Ann Count                	100.00    
+		Total Transcripts        	109.00    
+		Transcripts Per          	1.00      
+		Consistent Pred Count    	0.00      
+		Consistent Ann Count     	0.00      
+		Consistent Specificity   	0.00%     
+		Consistent Sensitivity   	0.00%     
+		Exact Pred Count         	0.00      
+		Exact Ann Count          	0.00      
+		Exact Specificity        	0.00%     
+		Exact Sensitivity        	0.00%     
+		Full Exact Pred Count    	0.00      
+		Full Exact Ann Count     	0.00      
+		Full Exact Specificity   	0.00%     
+		Full Exact Sensitivity   	0.00%     
+		Genomic Overlap Pred Count	109.00    
+		Genomic Overlap Ann Count	100.00    
+		Genomic Overlap Specificity	100.00%   
+		Genomic Overlap Sensitivity	100.00%   
+		CDS Overlap Pred Count   	109.00    
+		CDS Overlap Ann Count    	100.00    
+		CDS Overlap Specificity  	100.00%   
+		CDS Overlap Sensitivity  	100.00%   
+		All Introns Pred Count   	61.00     
+		All Introns Ann Count    	61.00     
+		All Introns Specificity  	55.96%    
+		All Introns Sensitivity  	61.00%    
+		Exact UTR5 Pred Count    	67.00     
+		Exact UTR5 Ann Count     	78.00     
+		Exact UTR5 Specificity   	61.47%    
+		Exact UTR5 Sensitivity   	78.00%    
+		Exact UTR3 Pred Count    	85.00     
+		Exact UTR3 Ann Count     	93.00     
+		Exact UTR3 Specificity   	77.98%    
+		Exact UTR3 Sensitivity   	93.00%    
+		Exact Intron Pred Count  	86.00     
+		Exact Intron Ann Count   	86.00     
+		Exact Intron Specificity 	78.90%    
+		Exact Intron Sensitivity 	86.00%    
+		Exact Exon Pred Count    	88.00     
+		Exact Exon Ann Count     	88.00     
+		Exact Exon Specificity   	80.73%    
+		Exact Exon Sensitivity   	88.00%    
+		Start Codon Pred Count   	67.00     
+		Start Codon Ann Count    	78.00     
+		Start Codon Specificity  	61.47%    
+		Start Codon Sensitivity  	78.00%    
+		Stop Codon Pred Count    	85.00     
+		Stop Codon Ann Count     	93.00     
+		Stop Codon Specificity   	77.98%    
+		Stop Codon Sensitivity   	93.00%    
+		Start Stop Pred Count    	56.00     
+		Start Stop Ann Count     	58.00     
+		Start Stop Specificity   	51.38%    
+		Start Stop Sensitivity   	58.00%    
+Transcript
+	All
+		Count                    	109.00    
+		Ann Count                	100.00    
+		Average Length           	1535.12   
+		Median Length            	1306.00   
+		Total Length             	167328.00 
+		Average Coding Length    	1411.37   
+		Median Coding Length     	1173.00   
+		Total Coding Length      	153839.00 
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Ave Exons Per            	2.74      
+		Med Exons Per            	2.00      
+		Total Exons              	299.00    
+		Consistent Pred Count    	0.00      
+		Consistent Ann Count     	0.00      
+		Consistent Specificity   	0.00%     
+		Consistent Sensitivity   	0.00%     
+		Exact Pred Count         	0.00      
+		Exact Ann Count          	0.00      
+		Exact Specificity        	0.00%     
+		Exact Sensitivity        	0.00%     
+		Full Exact Pred Count    	0.00      
+		Full Exact Ann Count     	0.00      
+		Full Exact Specificity   	0.00%     
+		Full Exact Sensitivity   	0.00%     
+		Genomic Overlap Pred Count	109.00    
+		Genomic Overlap Ann Count	100.00    
+		Genomic Overlap Specificity	100.00%   
+		Genomic Overlap Sensitivity	100.00%   
+		CDS Overlap Pred Count   	109.00    
+		CDS Overlap Ann Count    	100.00    
+		CDS Overlap Specificity  	100.00%   
+		CDS Overlap Sensitivity  	100.00%   
+		All Introns Pred Count   	61.00     
+		All Introns Ann Count    	61.00     
+		All Introns Specificity  	55.96%    
+		All Introns Sensitivity  	61.00%    
+		Exact UTR5 Pred Count    	67.00     
+		Exact UTR5 Ann Count     	78.00     
+		Exact UTR5 Specificity   	61.47%    
+		Exact UTR5 Sensitivity   	78.00%    
+		Exact UTR3 Pred Count    	85.00     
+		Exact UTR3 Ann Count     	93.00     
+		Exact UTR3 Specificity   	77.98%    
+		Exact UTR3 Sensitivity   	93.00%    
+		Exact Intron Pred Count  	86.00     
+		Exact Intron Ann Count   	86.00     
+		Exact Intron Specificity 	78.90%    
+		Exact Intron Sensitivity 	86.00%    
+		Exact Exon Pred Count    	88.00     
+		Exact Exon Ann Count     	88.00     
+		Exact Exon Specificity   	80.73%    
+		Exact Exon Sensitivity   	88.00%    
+		Start Codon Pred Count   	67.00     
+		Start Codon Ann Count    	78.00     
+		Start Codon Specificity  	61.47%    
+		Start Codon Sensitivity  	78.00%    
+		Stop Codon Pred Count    	85.00     
+		Stop Codon Ann Count     	93.00     
+		Stop Codon Specificity   	77.98%    
+		Stop Codon Sensitivity   	93.00%    
+		Start Stop Pred Count    	56.00     
+		Start Stop Ann Count     	58.00     
+		Start Stop Specificity   	51.38%    
+		Start Stop Sensitivity   	58.00%    
+	Complete
+		Count                    	85.00     
+		Ann Count                	100.00    
+		Average Length           	1576.73   
+		Median Length            	1325.00   
+		Total Length             	134022.00 
+		Average Coding Length    	1458.49   
+		Median Coding Length     	1203.00   
+		Total Coding Length      	123972.00 
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Ave Exons Per            	2.66      
+		Med Exons Per            	2.00      
+		Total Exons              	226.00    
+		Consistent Pred Count    	0.00      
+		Consistent Ann Count     	0.00      
+		Consistent Specificity   	0.00%     
+		Consistent Sensitivity   	0.00%     
+		Exact Pred Count         	0.00      
+		Exact Ann Count          	0.00      
+		Exact Specificity        	0.00%     
+		Exact Sensitivity        	0.00%     
+		Full Exact Pred Count    	0.00      
+		Full Exact Ann Count     	0.00      
+		Full Exact Specificity   	0.00%     
+		Full Exact Sensitivity   	0.00%     
+		Genomic Overlap Pred Count	85.00     
+		Genomic Overlap Ann Count	100.00    
+		Genomic Overlap Specificity	100.00%   
+		Genomic Overlap Sensitivity	100.00%   
+		CDS Overlap Pred Count   	85.00     
+		CDS Overlap Ann Count    	100.00    
+		CDS Overlap Specificity  	100.00%   
+		CDS Overlap Sensitivity  	100.00%   
+		All Introns Pred Count   	53.00     
+		All Introns Ann Count    	61.00     
+		All Introns Specificity  	62.35%    
+		All Introns Sensitivity  	61.00%    
+		Exact UTR5 Pred Count    	64.00     
+		Exact UTR5 Ann Count     	78.00     
+		Exact UTR5 Specificity   	75.29%    
+		Exact UTR5 Sensitivity   	78.00%    
+		Exact UTR3 Pred Count    	73.00     
+		Exact UTR3 Ann Count     	93.00     
+		Exact UTR3 Specificity   	85.88%    
+		Exact UTR3 Sensitivity   	93.00%    
+		Exact Intron Pred Count  	68.00     
+		Exact Intron Ann Count   	86.00     
+		Exact Intron Specificity 	80.00%    
+		Exact Intron Sensitivity 	86.00%    
+		Exact Exon Pred Count    	72.00     
+		Exact Exon Ann Count     	88.00     
+		Exact Exon Specificity   	84.71%    
+		Exact Exon Sensitivity   	88.00%    
+		Start Codon Pred Count   	64.00     
+		Start Codon Ann Count    	78.00     
+		Start Codon Specificity  	75.29%    
+		Start Codon Sensitivity  	78.00%    
+		Stop Codon Pred Count    	73.00     
+		Stop Codon Ann Count     	93.00     
+		Stop Codon Specificity   	85.88%    
+		Stop Codon Sensitivity   	93.00%    
+		Start Stop Pred Count    	56.00     
+		Start Stop Ann Count     	58.00     
+		Start Stop Specificity   	65.88%    
+		Start Stop Sensitivity   	58.00%    
+	Incomplete
+		Count                    	24.00     
+		Ann Count                	0.00      
+		Average Length           	1387.75   
+		Median Length            	1173.00   
+		Total Length             	33306.00  
+		Average Coding Length    	1244.46   
+		Median Coding Length     	1000.00   
+		Total Coding Length      	29867.00  
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Ave Exons Per            	3.04      
+		Med Exons Per            	2.00      
+		Total Exons              	73.00     
+		Consistent Pred Count    	0.00      
+		Consistent Ann Count     	0.00      
+		Consistent Specificity   	0.00%     
+		Consistent Sensitivity   	0.00%     
+		Exact Pred Count         	0.00      
+		Exact Ann Count          	0.00      
+		Exact Specificity        	0.00%     
+		Exact Sensitivity        	0.00%     
+		Full Exact Pred Count    	0.00      
+		Full Exact Ann Count     	0.00      
+		Full Exact Specificity   	0.00%     
+		Full Exact Sensitivity   	0.00%     
+		Genomic Overlap Pred Count	24.00     
+		Genomic Overlap Ann Count	0.00      
+		Genomic Overlap Specificity	100.00%   
+		Genomic Overlap Sensitivity	0.00%     
+		CDS Overlap Pred Count   	24.00     
+		CDS Overlap Ann Count    	0.00      
+		CDS Overlap Specificity  	100.00%   
+		CDS Overlap Sensitivity  	0.00%     
+		All Introns Pred Count   	8.00      
+		All Introns Ann Count    	0.00      
+		All Introns Specificity  	33.33%    
+		All Introns Sensitivity  	0.00%     
+		Exact UTR5 Pred Count    	3.00      
+		Exact UTR5 Ann Count     	0.00      
+		Exact UTR5 Specificity   	12.50%    
+		Exact UTR5 Sensitivity   	0.00%     
+		Exact UTR3 Pred Count    	12.00     
+		Exact UTR3 Ann Count     	0.00      
+		Exact UTR3 Specificity   	50.00%    
+		Exact UTR3 Sensitivity   	0.00%     
+		Exact Intron Pred Count  	18.00     
+		Exact Intron Ann Count   	0.00      
+		Exact Intron Specificity 	75.00%    
+		Exact Intron Sensitivity 	0.00%     
+		Exact Exon Pred Count    	16.00     
+		Exact Exon Ann Count     	0.00      
+		Exact Exon Specificity   	66.67%    
+		Exact Exon Sensitivity   	0.00%     
+		Start Codon Pred Count   	3.00      
+		Start Codon Ann Count    	0.00      
+		Start Codon Specificity  	12.50%    
+		Start Codon Sensitivity  	0.00%     
+		Stop Codon Pred Count    	12.00     
+		Stop Codon Ann Count     	0.00      
+		Stop Codon Specificity   	50.00%    
+		Stop Codon Sensitivity   	0.00%     
+		Start Stop Pred Count    	0.00      
+		Start Stop Ann Count     	0.00      
+		Start Stop Specificity   	0.00%     
+		Start Stop Sensitivity   	0.00%     
+	Single Exon
+		Count                    	8.00      
+		Ann Count                	0.00      
+		Average Length           	1014.00   
+		Median Length            	741.00    
+		Total Length             	8112.00   
+		Average Coding Length    	1011.00   
+		Median Coding Length     	738.00    
+		Total Coding Length      	8088.00   
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Ave Exons Per            	1.00      
+		Med Exons Per            	1.00      
+		Total Exons              	8.00      
+		Consistent Pred Count    	0.00      
+		Consistent Ann Count     	0.00      
+		Consistent Specificity   	0.00%     
+		Consistent Sensitivity   	0.00%     
+		Exact Pred Count         	0.00      
+		Exact Ann Count          	0.00      
+		Exact Specificity        	0.00%     
+		Exact Sensitivity        	0.00%     
+		Full Exact Pred Count    	0.00      
+		Full Exact Ann Count     	0.00      
+		Full Exact Specificity   	0.00%     
+		Full Exact Sensitivity   	0.00%     
+		Genomic Overlap Pred Count	8.00      
+		Genomic Overlap Ann Count	0.00      
+		Genomic Overlap Specificity	100.00%   
+		Genomic Overlap Sensitivity	0.00%     
+		CDS Overlap Pred Count   	8.00      
+		CDS Overlap Ann Count    	0.00      
+		CDS Overlap Specificity  	100.00%   
+		CDS Overlap Sensitivity  	0.00%     
+		All Introns Pred Count   	0.00      
+		All Introns Ann Count    	0.00      
+		All Introns Specificity  	0.00%     
+		All Introns Sensitivity  	0.00%     
+		Exact UTR5 Pred Count    	4.00      
+		Exact UTR5 Ann Count     	0.00      
+		Exact UTR5 Specificity   	50.00%    
+		Exact UTR5 Sensitivity   	0.00%     
+		Exact UTR3 Pred Count    	3.00      
+		Exact UTR3 Ann Count     	0.00      
+		Exact UTR3 Specificity   	37.50%    
+		Exact UTR3 Sensitivity   	0.00%     
+		Exact Intron Pred Count  	0.00      
+		Exact Intron Ann Count   	0.00      
+		Exact Intron Specificity 	0.00%     
+		Exact Intron Sensitivity 	0.00%     
+		Exact Exon Pred Count    	0.00      
+		Exact Exon Ann Count     	0.00      
+		Exact Exon Specificity   	0.00%     
+		Exact Exon Sensitivity   	0.00%     
+		Start Codon Pred Count   	4.00      
+		Start Codon Ann Count    	0.00      
+		Start Codon Specificity  	50.00%    
+		Start Codon Sensitivity  	0.00%     
+		Stop Codon Pred Count    	3.00      
+		Stop Codon Ann Count     	0.00      
+		Stop Codon Specificity   	37.50%    
+		Stop Codon Sensitivity   	0.00%     
+		Start Stop Pred Count    	1.00      
+		Start Stop Ann Count     	0.00      
+		Start Stop Specificity   	12.50%    
+		Start Stop Sensitivity   	0.00%     
+Exon
+	All
+		Count                    	299.00    
+		Ann Count                	287.00    
+		Average Length           	514.51    
+		Median Length            	296.00    
+		Total Length             	153839.00 
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	200.00    
+		Correct Ann Count        	200.00    
+		Correct Specificity      	66.89%    
+		Correct Sensitivity      	69.69%    
+		Overlap Pred Count       	294.00    
+		Overlap Ann Count        	287.00    
+		Overlap Specificity      	98.33%    
+		Overlap Sensitivity      	100.00%   
+		Overlap 80p Pred Count   	249.00    
+		Overlap 80p Ann Count    	255.00    
+		Overlap 80p Specificity  	83.28%    
+		Overlap 80p Sensitivity  	88.85%    
+		Splice 5 Pred Count      	224.00    
+		Splice 5 Ann Count       	234.00    
+		Splice 5 Specificity     	74.92%    
+		Splice 5 Sensitivity     	81.53%    
+		Splice 3 Pred Count      	247.00    
+		Splice 3 Ann Count       	253.00    
+		Splice 3 Specificity     	82.61%    
+		Splice 3 Sensitivity     	88.15%    
+	Initial
+		Count                    	83.00     
+		Ann Count                	100.00    
+		Average Length           	403.01    
+		Median Length            	222.00    
+		Total Length             	33450.00  
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	58.00     
+		Correct Ann Count        	58.00     
+		Correct Specificity      	69.88%    
+		Correct Sensitivity      	58.00%    
+		Overlap Pred Count       	83.00     
+		Overlap Ann Count        	100.00    
+		Overlap Specificity      	100.00%   
+		Overlap Sensitivity      	100.00%   
+		Overlap 80p Pred Count   	70.00     
+		Overlap 80p Ann Count    	82.00     
+		Overlap 80p Specificity  	84.34%    
+		Overlap 80p Sensitivity  	82.00%    
+		Splice 5 Pred Count      	63.00     
+		Splice 5 Ann Count       	78.00     
+		Splice 5 Specificity     	75.90%    
+		Splice 5 Sensitivity     	78.00%    
+		Splice 3 Pred Count      	70.00     
+		Splice 3 Ann Count       	82.00     
+		Splice 3 Specificity     	84.34%    
+		Splice 3 Sensitivity     	82.00%    
+	Internal
+		Count                    	113.00    
+		Ann Count                	87.00     
+		Average Length           	471.55    
+		Median Length            	238.00    
+		Total Length             	53285.00  
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	67.00     
+		Correct Ann Count        	67.00     
+		Correct Specificity      	59.29%    
+		Correct Sensitivity      	77.01%    
+		Overlap Pred Count       	108.00    
+		Overlap Ann Count        	87.00     
+		Overlap Specificity      	95.58%    
+		Overlap Sensitivity      	100.00%   
+		Overlap 80p Pred Count   	86.00     
+		Overlap 80p Ann Count    	78.00     
+		Overlap 80p Specificity  	76.11%    
+		Overlap 80p Sensitivity  	89.66%    
+		Splice 5 Pred Count      	75.00     
+		Splice 5 Ann Count       	74.00     
+		Splice 5 Specificity     	66.37%    
+		Splice 5 Sensitivity     	85.06%    
+		Splice 3 Pred Count      	91.00     
+		Splice 3 Ann Count       	78.00     
+		Splice 3 Specificity     	80.53%    
+		Splice 3 Sensitivity     	89.66%    
+	Terminal
+		Count                    	95.00     
+		Ann Count                	100.00    
+		Average Length           	621.22    
+		Median Length            	435.00    
+		Total Length             	59016.00  
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	75.00     
+		Correct Ann Count        	75.00     
+		Correct Specificity      	78.95%    
+		Correct Sensitivity      	75.00%    
+		Overlap Pred Count       	95.00     
+		Overlap Ann Count        	100.00    
+		Overlap Specificity      	100.00%   
+		Overlap Sensitivity      	100.00%   
+		Overlap 80p Pred Count   	86.00     
+		Overlap 80p Ann Count    	95.00     
+		Overlap 80p Specificity  	90.53%    
+		Overlap 80p Sensitivity  	95.00%    
+		Splice 5 Pred Count      	82.00     
+		Splice 5 Ann Count       	82.00     
+		Splice 5 Specificity     	86.32%    
+		Splice 5 Sensitivity     	82.00%    
+		Splice 3 Pred Count      	83.00     
+		Splice 3 Ann Count       	93.00     
+		Splice 3 Specificity     	87.37%    
+		Splice 3 Sensitivity     	93.00%    
+	Single
+		Count                    	8.00      
+		Ann Count                	0.00      
+		Average Length           	1011.00   
+		Median Length            	738.00    
+		Total Length             	8088.00   
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+		Overlap Pred Count       	8.00      
+		Overlap Ann Count        	0.00      
+		Overlap Specificity      	100.00%   
+		Overlap Sensitivity      	0.00%     
+		Overlap 80p Pred Count   	7.00      
+		Overlap 80p Ann Count    	0.00      
+		Overlap 80p Specificity  	87.50%    
+		Overlap 80p Sensitivity  	0.00%     
+		Splice 5 Pred Count      	4.00      
+		Splice 5 Ann Count       	0.00      
+		Splice 5 Specificity     	50.00%    
+		Splice 5 Sensitivity     	0.00%     
+		Splice 3 Pred Count      	3.00      
+		Splice 3 Ann Count       	0.00      
+		Splice 3 Specificity     	37.50%    
+		Splice 3 Sensitivity     	0.00%     
+	UTR3
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Average Length           	0.00      
+		Median Length            	0.00      
+		Total Length             	0.00      
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+		Overlap Pred Count       	0.00      
+		Overlap Ann Count        	0.00      
+		Overlap Specificity      	0.00%     
+		Overlap Sensitivity      	0.00%     
+		Overlap 80p Pred Count   	0.00      
+		Overlap 80p Ann Count    	0.00      
+		Overlap 80p Specificity  	0.00%     
+		Overlap 80p Sensitivity  	0.00%     
+		Splice 5 Pred Count      	0.00      
+		Splice 5 Ann Count       	0.00      
+		Splice 5 Specificity     	0.00%     
+		Splice 5 Sensitivity     	0.00%     
+		Splice 3 Pred Count      	0.00      
+		Splice 3 Ann Count       	0.00      
+		Splice 3 Specificity     	0.00%     
+		Splice 3 Sensitivity     	0.00%     
+	UTR5
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Average Length           	0.00      
+		Median Length            	0.00      
+		Total Length             	0.00      
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+		Overlap Pred Count       	0.00      
+		Overlap Ann Count        	0.00      
+		Overlap Specificity      	0.00%     
+		Overlap Sensitivity      	0.00%     
+		Overlap 80p Pred Count   	0.00      
+		Overlap 80p Ann Count    	0.00      
+		Overlap 80p Specificity  	0.00%     
+		Overlap 80p Sensitivity  	0.00%     
+		Splice 5 Pred Count      	0.00      
+		Splice 5 Ann Count       	0.00      
+		Splice 5 Specificity     	0.00%     
+		Splice 5 Sensitivity     	0.00%     
+		Splice 3 Pred Count      	0.00      
+		Splice 3 Ann Count       	0.00      
+		Splice 3 Specificity     	0.00%     
+		Splice 3 Sensitivity     	0.00%     
+	Intron
+		Count                    	190.00    
+		Ann Count                	187.00    
+		Average Length           	69.37     
+		Median Length            	64.00     
+		Total Length             	13180.00  
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	149.00    
+		Correct Ann Count        	149.00    
+		Correct Specificity      	78.42%    
+		Correct Sensitivity      	79.68%    
+		Overlap Pred Count       	186.00    
+		Overlap Ann Count        	184.00    
+		Overlap Specificity      	97.89%    
+		Overlap Sensitivity      	98.40%    
+		Overlap 80p Pred Count   	162.00    
+		Overlap 80p Ann Count    	162.00    
+		Overlap 80p Specificity  	85.26%    
+		Overlap 80p Sensitivity  	86.63%    
+		Splice 5 Pred Count      	161.00    
+		Splice 5 Ann Count       	160.00    
+		Splice 5 Specificity     	84.74%    
+		Splice 5 Sensitivity     	85.56%    
+		Splice 3 Pred Count      	156.00    
+		Splice 3 Ann Count       	156.00    
+		Splice 3 Specificity     	82.11%    
+		Splice 3 Sensitivity     	83.42%    
+	InframeOptional
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Average Length           	0.00      
+		Median Length            	0.00      
+		Total Length             	0.00      
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+		Overlap Pred Count       	0.00      
+		Overlap Ann Count        	0.00      
+		Overlap Specificity      	0.00%     
+		Overlap Sensitivity      	0.00%     
+		Overlap 80p Pred Count   	0.00      
+		Overlap 80p Ann Count    	0.00      
+		Overlap 80p Specificity  	0.00%     
+		Overlap 80p Sensitivity  	0.00%     
+		Splice 5 Pred Count      	0.00      
+		Splice 5 Ann Count       	0.00      
+		Splice 5 Specificity     	0.00%     
+		Splice 5 Sensitivity     	0.00%     
+		Splice 3 Pred Count      	0.00      
+		Splice 3 Ann Count       	0.00      
+		Splice 3 Specificity     	0.00%     
+		Splice 3 Sensitivity     	0.00%     
+	FrameshiftOptional
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Average Length           	0.00      
+		Median Length            	0.00      
+		Total Length             	0.00      
+		Average Score            	0.00      
+		Total Score              	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+		Overlap Pred Count       	0.00      
+		Overlap Ann Count        	0.00      
+		Overlap Specificity      	0.00%     
+		Overlap Sensitivity      	0.00%     
+		Overlap 80p Pred Count   	0.00      
+		Overlap 80p Ann Count    	0.00      
+		Overlap 80p Specificity  	0.00%     
+		Overlap 80p Sensitivity  	0.00%     
+		Splice 5 Pred Count      	0.00      
+		Splice 5 Ann Count       	0.00      
+		Splice 5 Specificity     	0.00%     
+		Splice 5 Sensitivity     	0.00%     
+		Splice 3 Pred Count      	0.00      
+		Splice 3 Ann Count       	0.00      
+		Splice 3 Specificity     	0.00%     
+		Splice 3 Sensitivity     	0.00%     
+Nuc
+	All
+		Count                    	6797.00   
+		Ann Count                	6619.00   
+		Correct Pred Count       	6607.00   
+		Correct Ann Count        	6607.00   
+		Correct Specificity      	97.20%    
+		Correct Sensitivity      	99.82%    
+	Initial
+		Count                    	6607.00   
+		Ann Count                	6619.00   
+		Correct Pred Count       	6607.00   
+		Correct Ann Count        	6607.00   
+		Correct Specificity      	100.00%   
+		Correct Sensitivity      	99.82%    
+	Internal
+		Count                    	4262.00   
+		Ann Count                	4485.00   
+		Correct Pred Count       	4072.00   
+		Correct Ann Count        	4485.00   
+		Correct Specificity      	95.54%    
+		Correct Sensitivity      	100.00%   
+	Terminal
+		Count                    	3953.00   
+		Ann Count                	4083.00   
+		Correct Pred Count       	3891.00   
+		Correct Ann Count        	4083.00   
+		Correct Specificity      	98.43%    
+		Correct Sensitivity      	100.00%   
+	Single
+		Count                    	3774.00   
+		Ann Count                	0.00      
+		Correct Pred Count       	3774.00   
+		Correct Ann Count        	0.00      
+		Correct Specificity      	100.00%   
+		Correct Sensitivity      	0.00%     
+	UTR3
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+	UTR5
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+	Intron
+		Count                    	3288.00   
+		Ann Count                	3790.00   
+		Correct Pred Count       	3013.00   
+		Correct Ann Count        	3013.00   
+		Correct Specificity      	91.64%    
+		Correct Sensitivity      	79.50%    
+	InframeOptional
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+	FrameshiftOptional
+		Count                    	0.00      
+		Ann Count                	0.00      
+		Correct Pred Count       	0.00      
+		Correct Ann Count        	0.00      
+		Correct Specificity      	0.00%     
+		Correct Sensitivity      	0.00%     
+Signal
+	Splice Acceptor
+		Count                    	208.00    
+		Ann Count                	187.00    
+		Correct Pred Count       	157.00    
+		Correct Ann Count        	156.00    
+		Correct Specificity      	75.48%    
+		Correct Sensitivity      	83.42%    
+	Splice Donor
+		Count                    	196.00    
+		Ann Count                	187.00    
+		Correct Pred Count       	161.00    
+		Correct Ann Count        	160.00    
+		Correct Specificity      	82.14%    
+		Correct Sensitivity      	85.56%    
+	Start Codon
+		Count                    	91.00     
+		Ann Count                	100.00    
+		Correct Pred Count       	67.00     
+		Correct Ann Count        	78.00     
+		Correct Specificity      	73.63%    
+		Correct Sensitivity      	78.00%    
+	Stop Codon
+		Count                    	103.00    
+		Ann Count                	100.00    
+		Correct Pred Count       	85.00     
+		Correct Ann Count        	93.00     
+		Correct Specificity      	82.52%    
+		Correct Sensitivity      	93.00%    
+Fri Nov  6 13:47:48 EST 2015
