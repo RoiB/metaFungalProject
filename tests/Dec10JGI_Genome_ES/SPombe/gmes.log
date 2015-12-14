@@ -1,0 +1,243 @@
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:35 2015] /home/tool/gmes/probuild --reformat_fasta --uppercase --allow_x --letters_per_line 60 --out data/dna.fna --label _dna --trace info/dna.trace --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/Schpo1_AssemblyScaffolds.fasta  
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:36 2015] /home/tool/gmes/probuild  --seq data/dna.fna  --allow_x  --stat info/dna.general
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:36 2015] /home/tool/gmes/probuild  --seq data/dna.fna  --allow_x  --stat_fasta info/dna.multi_fasta
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:37 2015] /home/tool/gmes/probuild  --seq data/dna.fna  --allow_x  --substring_n_distr info/dna.gap_distr
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:38 2015] /home/tool/gmes/gc_distr.pl --in data/dna.fna  --out info/dna.gc.csv  --w 1000,8000
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:39 2015] /home/tool/gmes/probuild  --seq /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/data/dna.fna  --split dna.fa  --max_contig 5000000 --min_contig 10000 --letters_per_line 100 --split_at_n 5000 --split_at_x 5000 --allow_x --x_to_n  --trace ../../info/training.trace 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:40 2015] /home/tool/gmes/probuild --seq data/training.fna --stat info/training.general --allow_x  --GC_PRECISION 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:40 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --section ES_ini --def /home/tool/gmes/heu_dir/heu_05_gcode_1_gc_36.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:40 2015] ln -sf  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_ini/es_ini.mod  run/ini.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:30:40 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:25 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_ini/es_ini.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_1/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:26 2015] /home/tool/gmes/parse_set.pl --section ES_A --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:27 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:27 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:27 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:28 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:28 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:28 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:29 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:30 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_A --def prev.mod  --out ES_A_1.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:32:30 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:14 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_1/ES_A_1.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_2/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:17 2015] /home/tool/gmes/parse_set.pl --section ES_A --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:17 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:17 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:17 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:18 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:18 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:18 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:19 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:20 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_A --def prev.mod  --out ES_A_2.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:34:20 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:04 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_2/ES_A_2.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_B_1/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:06 2015] /home/tool/gmes/parse_set.pl --section ES_B --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:06 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:07 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:07 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:07 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:08 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_0    --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:08 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:08 2015]  cat  GT.mat > donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:08 2015]  cat  AG.mat > acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:08 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_1    --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:09 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:09 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:09 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:09 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_2    --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:09 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:10 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:10 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:10 2015]  mv donor.mat     GT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:10 2015]  mv acceptor.mat  AG.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:10 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:11 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section intron_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:13 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section initial_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:15 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section internal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:17 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section terminal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:18 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section single_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:19 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_B --def prev.mod  --out ES_B_1.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:36:19 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:07 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_B_1/ES_B_1.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_1/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:09 2015] /home/tool/gmes/parse_set.pl --section ES_C --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:11 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:11 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_0    --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:11 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:11 2015]  cat  GT.mat > donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:12 2015]  cat  AG.mat > acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:12 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_1    --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:12 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:12 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:12 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:13 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_2    --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:13 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:13 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:13 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:13 2015]  mv donor.mat     GT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:13 2015]  mv acceptor.mat  AG.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:14 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:15 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section intron_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:17 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section initial_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:19 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section internal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:21 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section terminal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:22 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section single_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:22 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:22 2015]  cat AG_SHORT.mat >  acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:22 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:22 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:23 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:23 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:23 2015]  mv acceptor_short.mat  AG_SHORT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:23 2015] /home/tool/gmes/bp_seq_select.pl --seq_in bp_region.seq --seq_out gibbs.seq  --max_seq 4000  --bp_region_length  50  --min_bp_region_length 40 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:48 2015] /home/tool/gmes/Gibbs3  gibbs.seq  9 -n -r -o gibbs.out -nopt -m -w 0.001 -Z  -s 1 -P /home/tool/gmes/prior.bp -F
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:48 2015] /home/tool/gmes/parse_gibbs.pl --seq gibbs.seq  --gibbs gibbs.out --motif_seq bp.seq  --spacer_len spacer.len  --spacer_seq spacer.seq  --tr transition_bp.mod  
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:48 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section branch_point --format BRANCH 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:49 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section spacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:49 2015] /home/tool/gmes/scan_for_bp.pl --seq_in bp_region.seq  --gibbs_in gibbs.out  --pos_out prespacer.len 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:51 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section prespacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:51 2015] /home/tool/gmes/probuild --non spacer.seq --mkmod_non spacer.mkch   --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 6 --ORDM 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:51 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_C --def prev.mod  --out ES_C_1.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:37:51 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:34 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_1/ES_C_1.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_2/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:36 2015] /home/tool/gmes/parse_set.pl --section ES_C --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:36 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:37 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:37 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:37 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:38 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_0    --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:38 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:38 2015]  cat  GT.mat > donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:38 2015]  cat  AG.mat > acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:39 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_1    --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:39 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:39 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:39 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:39 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_2    --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:40 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:40 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:40 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:40 2015]  mv donor.mat     GT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:40 2015]  mv acceptor.mat  AG.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:41 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:42 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section intron_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:44 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section initial_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:47 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section internal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:48 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section terminal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:50 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section single_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:50 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:50 2015]  cat AG_SHORT.mat >  acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:50 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:50 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:51 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:51 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:51 2015]  mv acceptor_short.mat  AG_SHORT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:39:51 2015] /home/tool/gmes/bp_seq_select.pl --seq_in bp_region.seq --seq_out gibbs.seq  --max_seq 4000  --bp_region_length  50  --min_bp_region_length 40 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:22 2015] /home/tool/gmes/Gibbs3  gibbs.seq  9 -n -r -o gibbs.out -nopt -m -w 0.001 -Z  -s 1 -P /home/tool/gmes/prior.bp -F
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:23 2015] /home/tool/gmes/parse_gibbs.pl --seq gibbs.seq  --gibbs gibbs.out --motif_seq bp.seq  --spacer_len spacer.len  --spacer_seq spacer.seq  --tr transition_bp.mod  
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:23 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section branch_point --format BRANCH 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:23 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section spacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:24 2015] /home/tool/gmes/scan_for_bp.pl --seq_in bp_region.seq  --gibbs_in gibbs.out  --pos_out prespacer.len 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:25 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section prespacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:26 2015] /home/tool/gmes/probuild --non spacer.seq --mkmod_non spacer.mkch   --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 6 --ORDM 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:26 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_C --def prev.mod  --out ES_C_2.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:40:26 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:06 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_2/ES_C_2.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_3/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:09 2015] /home/tool/gmes/parse_set.pl --section ES_C --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:09 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:10 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_0    --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:11 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:11 2015]  cat  GT.mat > donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:11 2015]  cat  AG.mat > acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:11 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_1    --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:12 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:12 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:12 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:12 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_2    --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:12 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:13 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:13 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:13 2015]  mv donor.mat     GT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:13 2015]  mv acceptor.mat  AG.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:13 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:15 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section intron_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:17 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section initial_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:20 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section internal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:21 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section terminal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:22 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section single_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:22 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015]  cat AG_SHORT.mat >  acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015]  mv acceptor_short.mat  AG_SHORT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:23 2015] /home/tool/gmes/bp_seq_select.pl --seq_in bp_region.seq --seq_out gibbs.seq  --max_seq 4000  --bp_region_length  50  --min_bp_region_length 40 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:50 2015] /home/tool/gmes/Gibbs3  gibbs.seq  9 -n -r -o gibbs.out -nopt -m -w 0.001 -Z  -s 1 -P /home/tool/gmes/prior.bp -F
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:50 2015] /home/tool/gmes/parse_gibbs.pl --seq gibbs.seq  --gibbs gibbs.out --motif_seq bp.seq  --spacer_len spacer.len  --spacer_seq spacer.seq  --tr transition_bp.mod  
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:51 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section branch_point --format BRANCH 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:51 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section spacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:52 2015] /home/tool/gmes/scan_for_bp.pl --seq_in bp_region.seq  --gibbs_in gibbs.out  --pos_out prespacer.len 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:53 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section prespacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:54 2015] /home/tool/gmes/probuild --non spacer.seq --mkmod_non spacer.mkch   --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 6 --ORDM 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:54 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_C --def prev.mod  --out ES_C_3.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:42:54 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:34 2015] ln -sf /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_3/ES_C_3.mod  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_4/prev.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:37 2015] /home/tool/gmes/parse_set.pl --section ES_C --cfg  /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg  --v
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:37 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section start_ATG   --format INI
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:38 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAA    --format TERM_TAA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:38 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TAG    --format TERM_TAG
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:38 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section stop_TGA    --format TERM_TGA
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:38 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_0    --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:39 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:39 2015]  cat  GT.mat > donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:39 2015]  cat  AG.mat > acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:39 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_1    --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:40 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:40 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:40 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:40 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section donor_GT    --format DONOR_2    --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:40 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_AG --format ACCEPTOR_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:40 2015]  cat  GT.mat >> donor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:41 2015]  cat  AG.mat >> acceptor.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:41 2015]  mv donor.mat     GT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:41 2015]  mv acceptor.mat  AG.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:41 2015] /home/tool/gmes/probuild --cod cod.seq --non non.seq --mkmod_euk mkch    --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 8 --revcomp_non  --ORDM 5 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:43 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section intron_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:45 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section initial_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:47 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section internal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:49 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section terminal_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:50 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section single_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:50 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_0 --phase 0 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015]  cat AG_SHORT.mat >  acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_1 --phase 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section acceptor_short_AG --format ACC_BP_2 --phase 2 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015]  cat AG_SHORT.mat >> acceptor_short.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015]  mv acceptor_short.mat  AG_SHORT.mat 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:44:51 2015] /home/tool/gmes/bp_seq_select.pl --seq_in bp_region.seq --seq_out gibbs.seq  --max_seq 4000  --bp_region_length  50  --min_bp_region_length 40 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:18 2015] /home/tool/gmes/Gibbs3  gibbs.seq  9 -n -r -o gibbs.out -nopt -m -w 0.001 -Z  -s 1 -P /home/tool/gmes/prior.bp -F
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:19 2015] /home/tool/gmes/parse_gibbs.pl --seq gibbs.seq  --gibbs gibbs.out --motif_seq bp.seq  --spacer_len spacer.len  --spacer_seq spacer.seq  --tr transition_bp.mod  
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:19 2015] /home/tool/gmes/make_nt_freq_mat.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section branch_point --format BRANCH 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:19 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section spacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:20 2015] /home/tool/gmes/scan_for_bp.pl --seq_in bp_region.seq  --gibbs_in gibbs.out  --pos_out prespacer.len 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:22 2015] /home/tool/gmes/histogram.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section prespacer_DUR
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:22 2015] /home/tool/gmes/probuild --non spacer.seq --mkmod_non spacer.mkch   --MKCHAIN_L_MARGING 0  --MKCHAIN_R_MARGING 0  --MKCHAIN_PSEUDOCOUNTS 1  --MKCHAIN_PRECISION 6 --ORDM 1 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:23 2015] /home/tool/gmes/build_mod.pl --cfg /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run.cfg --section ES_C --def prev.mod  --out ES_C_4.mod 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:23 2015] cp /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_4/ES_C_4.mod output/gmhmm.mod
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:24 2015] /home/tool/gmes/probuild  --seq /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/data/dna.fna  --split dna.fa  --max_contig 5000000 --min_contig 500 --letters_per_line 100 --split_at_n 5000 --split_at_x 5000 --allow_x --x_to_n  --trace ../../info/prediction.trace 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:45:24 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:05 2015] 6 contigs in training
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:05 2015] /home/tool/gmes/hmm_to_gtf.pl  --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/output/gmhmm/dna.fa_2.out  --app  --out genemark.gtf  --min 120 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:05 2015] /home/tool/gmes/hmm_to_gtf.pl  --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/output/gmhmm/dna.fa_5.out  --app  --out genemark.gtf  --min 120 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:05 2015] /home/tool/gmes/hmm_to_gtf.pl  --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/output/gmhmm/dna.fa_1.out  --app  --out genemark.gtf  --min 120 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:06 2015] /home/tool/gmes/hmm_to_gtf.pl  --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/output/gmhmm/dna.fa_4.out  --app  --out genemark.gtf  --min 120 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:06 2015] /home/tool/gmes/hmm_to_gtf.pl  --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/output/gmhmm/dna.fa_6.out  --app  --out genemark.gtf  --min 120 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:06 2015] /home/tool/gmes/hmm_to_gtf.pl  --in /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/output/gmhmm/dna.fa_3.out  --app  --out genemark.gtf  --min 120 
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:06 2015] /home/tool/gmes/reformat_gff.pl --out genemark.gtf.tmp --trace info/dna.trace --in genemark.gtf  --back
+/home/tool/gmes/gmes_petap.pl : [Fri Dec 11 12:47:06 2015] mv genemark.gtf.tmp genemark.gtf

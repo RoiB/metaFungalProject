@@ -1,0 +1,1 @@
+/home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_2/ES_A_2.mod

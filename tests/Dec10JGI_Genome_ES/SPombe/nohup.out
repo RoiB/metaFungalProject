@@ -1,0 +1,141 @@
+check before run
+create directories
+commit input data
+data report
+commit training data
+training data report
+prepare initial model
+get GC of sequence
+GC 36
+build initial ES model
+Error in tempdir() using /tmp/XXXXXXXXXX: Could not create directory /tmp/oFLdykDs8f: No space left on device at /usr/local/share/perl5/Parallel/ForkManager.pm line 584.
+running step ES_A
+running gm.hmm on local multi-core system
+6 contigs in training
+check before run
+create directories
+commit input data
+data report
+commit training data
+training data report
+prepare initial model
+get GC of sequence
+GC 36
+build initial ES model
+running step ES_A
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_1
+training level ES_A: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_1
+Initial	1004
+Internal	356
+Terminal	1001
+Single	1662
+Intron:	1360	1579863
+Intergenic:	2041	2745081
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_2
+training level ES_A: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_A_2
+Initial	1152
+Internal	617
+Terminal	1151
+Single	1820
+Intron:	1770	1057287
+Intergenic:	2252	2733050
+running step ES_B
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_B_1
+training level ES_B: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_B_1
+Initial	1269
+Internal	850
+Terminal	1267
+Single	1803
+Intron:	2120	990460
+Intergenic:	2340	2725010
+running step ES_C
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_1
+training level ES_C: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_1
+Initial	1495
+Internal	1979
+Terminal	1493
+Single	1845
+Intron:	3474	554954
+Intergenic:	2452	2620783
+SvsM  0.555591572123177 vs 0.444408427876823
+genes in IvsT: 1471
+1, -0.873702792454295
+2, -1.34045438631365
+3, -1.85561841167824
+4, -2.46538398329914
+5, -3.26834602986629
+6, -3.55602810231807
+7, -4.349258741435
+IvsT  0.55928795247197 vs 0.44071204752803
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_2
+training level ES_C: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_2
+Initial	1545
+Internal	2053
+Terminal	1543
+Single	1902
+Intron:	3598	358491
+Intergenic:	2446	2506016
+SvsM  0.557304785894207 vs 0.442695214105793
+genes in IvsT: 1517
+1, -0.867720323776369
+2, -1.3058967648523
+3, -1.91284392749349
+4, -2.58829153095404
+5, -3.09038347475127
+6, -3.58682036106516
+7, -4.32875770579454
+IvsT  0.562252899254779 vs 0.437747100745221
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_3
+training level ES_C: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_3
+Initial	1542
+Internal	2040
+Terminal	1540
+Single	1910
+Intron:	3582	333587
+Intergenic:	2442	2494053
+SvsM  0.558768070395977 vs 0.441231929604023
+genes in IvsT: 1514
+1, -0.861042257643676
+2, -1.2942319137667
+3, -1.94261308045693
+4, -2.61298023268506
+5, -3.14812316410176
+6, -3.4938690375083
+7, -4.3267781604434
+IvsT  0.564677946979003 vs 0.435322053020997
+running gm.hmm on local multi-core system
+6 contigs in training
+concatenate predictions: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_4
+training level ES_C: /home/richard/research/tests/Dec10JGI_Genome_ES/SPombe/run/ES_C_4
+Initial	1547
+Internal	2038
+Terminal	1545
+Single	1908
+Intron:	3585	329912
+Intergenic:	2438	2488145
+SvsM  0.558139534883721 vs 0.441860465116279
+genes in IvsT: 1518
+1, -0.857450231851222
+2, -1.28727803803344
+3, -1.95451092982791
+4, -2.59776113924323
+5, -3.19801457291048
+6, -3.51848646818526
+7, -4.32941668440158
+IvsT  0.562266534548921 vs 0.437733465451079
+predict final gene set
+running gm.hmm on local multi-core system
+6 contigs in training
+6 contigs in training
