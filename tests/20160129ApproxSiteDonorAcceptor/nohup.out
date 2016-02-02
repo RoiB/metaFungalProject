@@ -1,0 +1,12 @@
+[I 08:31:49.504 NotebookApp] Using MathJax from CDN: https://cdn.mathjax.org/mathjax/latest/MathJax.js
+[I 08:31:49.576 NotebookApp] Serving notebooks from local directory: /home/richard/research/tests/20160129ApproxSiteDonorAcceptor
+[I 08:31:49.576 NotebookApp] 0 active kernels 
+[I 08:31:49.576 NotebookApp] The IPython Notebook is running at: http://localhost:8001/
+[I 08:31:49.576 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 08:31:54.622 NotebookApp] 404 GET /api/kernels/a70ef5c9-de49-4641-9ddb-4540f07bc6e3/channels?session_id=CCA2B7E8A5924A4E862F01F0955C1CCA (127.0.0.1): Kernel does not exist: a70ef5c9-de49-4641-9ddb-4540f07bc6e3
+[W 08:31:54.662 NotebookApp] 404 GET /api/kernels/a70ef5c9-de49-4641-9ddb-4540f07bc6e3/channels?session_id=CCA2B7E8A5924A4E862F01F0955C1CCA (127.0.0.1) 59.54ms referer=None
+[W 08:31:54.833 NotebookApp] No such file or directory: research/notebooks
+[W 08:31:54.833 NotebookApp] 404 GET /api/contents/research/notebooks?type=directory&_=1454066774184 (127.0.0.1) 1.76ms referer=http://localhost:8001/tree/research/notebooks
+[I 08:31:59.017 NotebookApp] 302 GET / (127.0.0.1) 0.72ms
+[C 08:32:14.653 NotebookApp] received signal 15, stopping
+[I 08:32:14.654 NotebookApp] Shutting down kernels
